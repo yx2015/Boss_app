@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="use_help">
+        <item>使用帮助</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>送货时间</item>
+        <item>业务时间</item>
+        <item>装卸时间</item>
+    </string-array>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/bg_base">
+
+    <View
+        style="@style/DivideLineStyle"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bussiness_fee_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-35dp"
+            android:layout_toRightOf="@+id/spinner_fee_fragment"
+            android:background="@mipmap/dropdown_ic_arrow_normal_holo_dark" />
+
+        <TextView
+            android:id="@+id/spinner_fee_fragment"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingRight="5dp"
+            android:gravity="center_vertical"
+            android:text="送货时间"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/normal_text_size" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/spinner_fee_fragment"
+            android:background="#66d7d7d7" />
+
+        <LinearLayout
+            android:id="@+id/ll_select_date1"
+            style="@style/MatchWrap.Horizontal"
+            android:layout_toRightOf="@+id/spinner_fee_fragment">
+
+            <TextView
+                android:id="@+id/tv_start_time_fee"
+                style="@style/NormalTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/primary_text"
+                tools:text="2015-8-10" />
+
+            <View
+                android:layout_width="25dp"
+                android:layout_height="1px"
+                android:layout_gravity="center_vertical"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/tv_end_time_fee"
+                style="@style/NormalTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/primary_text"
+                tools:text="2015-8-10" />
+
+            <ImageView
+                style="@style/RightArrowStyle"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/DivideLineStyle"
+        android:layout_marginBottom="10dp" />
+
+    <View style="@style/DivideLineStyle" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs_fragment_bussiness_fee"
+        style="@style/CustomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white" />
+
+    <View style="@style/DivideLineStyle" />
+
+    <com.hxl.universallibrary.widgets.XViewPager
+        android:id="@+id/fragment_goods_state_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_base" />
+</LinearLayout>

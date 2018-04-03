@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_support_view_group"
+    style="@style/MatchMatch.Vertical"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/common_toolbar" />
+
+    <WebView
+        android:id="@+id/about_support_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchWrap.Vertical"
+    android:background="@color/white"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_company"
+        style="@style/NormalTextViewStyle"
+        android:layout_marginLeft="20dp"
+        tools:text="奥海科技" />
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_yingshou"
+            style="@style/NormalTextViewStyle"
+            android:layout_marginLeft="40dp"
+            android:text="应收(元):"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/normal_text_size" />
+
+        <TextView
+            android:id="@+id/tv_yingshou_fee"
+            style="@style/NormalTextViewStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_yingshou"
+            tools:text="2300.00" />
+
+        <TextView
+            android:id="@+id/tv_yingfu"
+            style="@style/NormalTextViewStyle"
+            android:layout_below="@+id/tv_yingshou"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="应付(元):"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/normal_text_size" />
+
+        <TextView
+            android:id="@+id/tv_yingfu_fee"
+            style="@style/NormalTextViewStyle"
+            android:layout_below="@+id/tv_yingshou_fee"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_yingfu"
+            tools:text="2300.00" />
+
+        <TextView
+            android:id="@+id/tv_fee"
+            style="@style/NormalTextViewStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/larger_text_size"
+            tools:text="+345,99" />
+    </RelativeLayout>
+
+    <View
+        style="@style/DivideLineStyle"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

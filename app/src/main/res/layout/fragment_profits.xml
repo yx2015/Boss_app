@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/MatchMatch.Vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_profits"
+        style="@style/MatchWrap.Vertical"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_fee"
+            style="@style/NormalTextViewStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="总计(元)" />
+
+
+        <TextView
+            android:id="@+id/tv_count_fragment_profits"
+            style="@style/WrapWrap"
+            android:layout_marginTop="5dp"
+            android:drawableTop="@mipmap/ic_shang_ban_hu"
+            tools:text="+8,88.00"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:textSize="@dimen/largest_text_size" />
+        <ImageView
+            android:id="@+id/iv_blue_huxing"
+            style="@style/WrapWrap"
+            android:layout_below="@+id/tv_count_fragment_profits"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_xia_ban_hu" />
+    </RelativeLayout>
+
+    <View
+        style="@style/DivideLineStyle"
+        android:layout_marginTop="10dp" />
+
+    <com.hxl.universallibrary.widgets.XSwipeRefreshLayout
+        android:id="@+id/fragment_profits_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xyl.boss_app.widgets.LoadMoreListView
+            android:id="@+id/fragment_profits_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:visibility="gone" />
+    </com.hxl.universallibrary.widgets.XSwipeRefreshLayout>
+</LinearLayout>

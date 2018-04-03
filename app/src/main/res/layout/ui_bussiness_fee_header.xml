@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchWrap.Vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/bg_base"
+              android:paddingBottom="10dp">
+    <RelativeLayout android:id="@+id/ll_fee"
+                    style="@style/MatchWrap.Vertical"
+                    android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_fee"
+            style="@style/NormalTextViewStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="总计(元)"/>
+
+
+        <TextView
+            android:id="@+id/tv_count_fragment_fee_header"
+            style="@style/WrapWrap"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:drawableTop="@mipmap/ic_shang_ban_hu"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/largest_text_size"
+            tools:text="+8,88.00"/>
+
+        <TextView
+            android:id="@+id/tv_actual_count_header"
+            style="@style/NormalTextViewStyle"
+            android:layout_below="@+id/tv_count_fragment_fee_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_actual_count"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            tools:text="实收6.00"/>
+
+        <ImageView
+            android:id="@+id/iv_blue_huxing"
+            style="@style/WrapWrap"
+            android:layout_below="@+id/tv_actual_count_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/ic_xia_ban_hu"/>
+        <View
+            style="@style/DivideLineStyle"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

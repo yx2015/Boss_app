@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchWrap.Vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/white"
+              android:paddingTop="10dp">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/tv_company"
+            style="@style/NormalTextViewStyle"
+            android:layout_centerVertical="true"
+            tools:text="澳海科技"/>
+
+        <TextView
+            android:id="@+id/tv_fee"
+            style="@style/NormalTextViewStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/larger_text_size"
+            tools:text="+345,99"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/tv_count_20GP"
+            style="@style/NormalTextViewStyle"
+            android:textColor="@color/orange"
+            tools:text="5"/>
+
+        <TextView
+            android:id="@+id/tv_20GP"
+            style="@style/NormalTextViewStyle"
+            android:layout_toRightOf="@id/tv_count_20GP"
+            android:text="*20GP ;  "
+            android:textColor="@color/txt_color_gray"/>
+
+        <TextView
+            android:id="@+id/tv_count_40GP"
+            style="@style/NormalTextViewStyle"
+            android:layout_toRightOf="@id/tv_20GP"
+            android:textColor="@color/orange"
+            tools:text="2"/>
+
+        <TextView
+            android:id="@+id/tv_40GP"
+            style="@style/NormalTextViewStyle"
+            android:layout_toRightOf="@id/tv_count_40GP"
+            android:text="*40GP ;  "
+            android:textColor="@color/txt_color_gray"/>
+
+        <TextView
+            android:id="@+id/tv_count_40HQ"
+            style="@style/NormalTextViewStyle"
+            android:layout_toRightOf="@id/tv_40GP"
+            android:textColor="@color/orange"
+            tools:text="5"/>
+
+        <TextView
+            android:id="@+id/tv_40HQ"
+            style="@style/NormalTextViewStyle"
+            android:layout_toRightOf="@id/tv_count_40HQ"
+            android:text="*40HQ"
+            android:textColor="@color/txt_color_gray"/>
+
+
+        <TextView
+            android:id="@+id/tv_shishou_fee"
+            style="@style/NormalTextViewStyle"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/txt_color_gray"
+            tools:text="实收60000.00"/>
+    </RelativeLayout>
+    <View style="@style/DivideLineStyle"
+          android:layout_marginTop="10dp"/>
+</LinearLayout>

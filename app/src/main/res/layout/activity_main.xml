@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/bg_base"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/common_toolbar" />
+
+    <com.hxl.universallibrary.widgets.XViewPager
+        android:id="@+id/home_container"
+        style="@style/MatchAuto" />
+
+
+    <ImageView style="@style/DivideLineStyle" />
+
+    <RadioGroup
+        style="@style/MatchWrap.Horizontal"
+        android:background="#f5f5f5"
+        android:checkedButton="@+id/rb_main">
+
+        <RadioButton
+            android:id="@+id/rb_main"
+            style="@style/AutoWrap"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_main_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_main"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="@dimen/small_text_size" />
+
+        <RadioButton
+            android:id="@+id/rb_bussiness_fee"
+            style="@style/AutoWrap"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_fee_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_bussiness_fee"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="@dimen/small_text_size" />
+
+        <RadioButton
+            android:id="@+id/rb_goods_state"
+            style="@style/AutoWrap"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_goods_state_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_concrete_state"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="@dimen/small_text_size" />
+
+        <RadioButton
+            android:id="@+id/rb_user_center"
+            style="@style/AutoWrap"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_user_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_my"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="@dimen/small_text_size" />
+    </RadioGroup>
+
+
+</LinearLayout>

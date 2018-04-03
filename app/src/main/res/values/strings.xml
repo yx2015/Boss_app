@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">新集运</string>
+    <string name="login">登录</string>
+    <string name="hint_login_pwd">请输入密码</string>
+    <string name="hint_login_name">请输入用户名</string>
+    <string name="hint_company_code">请输入公司代码</string>
+    <string name="help">使用帮助</string>
+    <string name="has_question">登录遇到问题?</string>
+    <string name="how_to_register">如何注册新集运老板APP</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="costom">新运力客服</string>
+    <string name="tab_main">首页</string>
+    <string name="tab_concrete_state">业务柜量</string>
+    <string name="tab_bussiness_fee">业务费用</string>
+    <string name="tab_my">我的</string>
+    <string name="about_us">关于我们</string>
+    <string name="soft_update">软件更新</string>
+    <string name="common_load_more_end">没有更多了</string>
+    <string-array name="goods_state">
+        <item>全部</item>
+        <item>起运港</item>
+        <item>海上运输</item>
+        <item>目的港</item>
+    </string-array>
+
+    <string-array name="fee_state">
+        <item>应收</item>
+        <item>应付</item>
+        <item>利润</item>
+    </string-array>
+</resources>

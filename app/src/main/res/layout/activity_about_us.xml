@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/common_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/ic_about_us"
+        android:textColor="@color/primary_text"
+        tools:text="新集运老板APP：1.0.0" />
+
+    <TextView
+        android:id="@+id/tv_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:gravity="center_vertical"
+        android:text="新集运许可及服务协议"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/large_text_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_contract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_ban"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="联系电话"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/normal_text_size" />
+
+    <TextView
+        android:id="@+id/tv_ban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="新运力公司 版权所有"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/normal_text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Copyright ©2015-2018 Xinyunli.All Rights Reserved."
+        android:textColor="@color/primary_text"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

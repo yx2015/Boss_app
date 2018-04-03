@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/bg_base"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_how_to_register"
+        style="@style/MatchWrap.Horizontal"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/AutoMatchTextViewStyle"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/how_to_register" />
+
+        <ImageView style="@style/RightArrowStyle" />
+
+    </LinearLayout>
+
+    <ImageView style="@style/DivideLineStyle" />
+
+    <ImageView
+        style="@style/DivideLineStyle"
+        android:layout_marginTop="12dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_forget_pwd"
+        style="@style/MatchWrap.Horizontal"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/AutoMatchTextViewStyle"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/forget_pwd" />
+
+        <ImageView style="@style/RightArrowStyle" />
+
+
+    </LinearLayout>
+
+    <ImageView style="@style/DivideLineStyle" />
+
+    <ImageView
+        style="@style/DivideLineStyle"
+        android:layout_marginTop="12dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_custom"
+        style="@style/MatchWrap.Horizontal"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/AutoMatchTextViewStyle"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/costom" />
+
+        <ImageView style="@style/RightArrowStyle" />
+
+    </LinearLayout>
+
+    <ImageView style="@style/DivideLineStyle" />
+</LinearLayout>
